@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(./assets/bg-medium1.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    padding: 30px 15px 0px;
+}
+header h1 {
+    color: rgb(180, 180, 180);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+section {
+    padding: 10px;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button {
+    background: #dd383a;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 20px;
+    color: #0a223d;
+    font-weight: bold;
+}
+.searchbar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    
+    outline: none;
+    background: none;
+    background-color: #eee;
+    border-radius: 10px 0px 0px 10px;
+    
+    color: #53565a;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+.searchbar:hover {
+    box-shadow: 0px 0px 8px 3px rgba(68, 132, 196, 0.9);
+}
+@media only screen and (max-width:840px) {
+    body {
+        background: url(./assets/bg.jpg), center, no-repeat;
+        background-size: cover;
+    }
+    .search-button {
+        background: #0a223d;
+        color: #dd383a;
+    }
+}
+@media only screen and (max-width: 550px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    main {
+        max-width: 100%;
+    }
+}
+
+/* CSS Loader */
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #36d60e;
+    border-bottom: 12px solid #36d60e;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error {
+    margin-top: 2rem;
+    color: #33e6aa;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}

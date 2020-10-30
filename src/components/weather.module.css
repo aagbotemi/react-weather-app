@@ -1,0 +1,124 @@
+.result {
+    width: 100%;
+    margin: auto;
+}
+.line1 {
+    display: flex;
+    align-items: baseline;
+}
+.location {
+    color: #fff;
+    font-size: 2.5rem;
+}
+.date {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    color: #46fa55;
+    font-weight: bold;
+}
+.line2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0.2rem 5rem 2rem 0rem;
+}
+.info {
+    margin-left: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 3rem 2rem 2rem;
+    border-radius: 0.5rem 2rem 1rem;
+    box-shadow: 1px 1px 4px 3px rgba(150, 150, 150, 0.35);
+}
+.temp {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #dedede;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.35);
+}
+.hilow {
+    font-size: 1.2rem;
+    color:  #fae846;
+    font-weight: bold;
+}
+.icon {
+    display: grid;
+    align-items: baseline;
+    font-size: 2rem;
+    color: #cdcda9;
+    font-weight: 900;
+}
+.icon .icondescription {
+    margin-left: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.info2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width:100%;
+
+    color: #00db87;
+    font-size: 1.2rem;
+
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1.3rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px 3px rgba(150, 150, 150, 0.35);
+}
+.feel{
+    margin-bottom: 1.5rem;
+}
+@media only screen and (max-width:800px) {
+    .line1 {
+        margin-bottom: 0.5rem;
+    }
+    .line2 {
+        margin: 0.2rem 0rem 1rem;
+    }
+    .result {
+        display: grid;
+        justify-content: center;
+    }
+    .line2 {
+        flex-direction: column;
+    }
+    .icon {
+        padding-top: 1rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width:551px) and (max-width:799px) {
+    .info {
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+@media only screen and (max-width:550px) {
+    .line1 {
+        display: grid;
+        margin: -1rem 0rem 0.8rem;
+    }
+    .date {
+        margin-left: 0rem;
+    }
+    .info {
+        /* width: 90%; */
+        padding: 0.5rem 3rem 2rem;
+    }
+    .info {
+        width: 100%;
+        margin-left: 0rem;
+    }
+    .info2 {
+        grid-template-columns: repeat(1, 1fr);
+        -ms-grid-columns: repeat(1, 1fr);
+        font-size: 1rem;
+    }
+    .feel, .wind, .humidity, .pressure {
+        margin-bottom: 0.8rem;
+    }
+}
